@@ -6,7 +6,7 @@ Bem-vindo ao repositório do **Afinador Eletrônico** desenvolvido para a **BitD
 
 ## 🎵 Sobre o Projeto
 
-O **Afinador Eletrônico** foi projetado para demonstrar a aplicação dos conhecimentos obtidos na capacitação EMBARCATECH a atender ao projeto final da primeira fase do curso. Ele funciona detectando automaticamente a frequência emitida pelo instrumento musical e compara-a com as notas padrão (E2, A2, D3, G3, B3, E4). O sistema fornece feedback visual através do LED RGB e do display oled. Além disso, emite sinais sonoros para indicar o pressionamento dos botões de seleção de nota.
+O **Afinador Eletrônico** foi projetado para demonstrar a aplicação dos conhecimentos obtidos na capacitação EMBARCATECH a atender ao projeto final da primeira fase do curso. Ele funciona detectando automaticamente a frequência emitida pelo instrumento musical e compara-a com as notas padrão (E2, A2, D3, G3, B3, E4). O sistema fornece feedback visual através do LED RGB e do display oled. Além disso, emite sinais sonoros para indicar o pressionamento dos botões de seleção de nota. Você encontrará dois arquivos com o programa fonte do projeto, em linguagem C. Um sem nehum comentário (afinador.c) e outro com comentários detalhados (afinadorcomentado.c) para sua informação sobre os detalhes do código. Ao seguir as instruções do CMakeLists.txt, o compilador estará trabalhando com o arquivo fonte sem comentários.
 
 ### Características Principais:
 - **Detecção Automática de Frequências**: Utiliza o algoritmo **YIN** para identificar a frequência fundamental da nota tocada.
