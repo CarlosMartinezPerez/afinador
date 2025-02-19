@@ -2,11 +2,11 @@
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/CarlosMartinezPerez/afinador/tree/main)
 
-Bem-vindo ao repositório do **Afinador Eletrônico** desenvolvido para a **BitDogLab**! Este projeto é um afinador eletrônico baseado no microcontrolador Raspberry Pi Pico, que utiliza uma série de sensores e algoritmos para ajudar músicos a afinarem seus instrumentos com precisão.
+Bem-vindo ao repositório do **Afinador Eletrônico** desenvolvido para a **BitDogLab**! Este projeto é um afinador eletrônico baseado no microcontrolador Raspberry Pi Pico, que utiliza os recursos da placa e o algoritmo Yin para detectar a frequência fundamental da onda sonora emitida pelo violão.
 
 ## 🎵 Sobre o Projeto
 
-O **Afinador Eletrônico** foi projetado para ser uma ferramenta prática e eficiente para músicos amadores e profissionais. Ele detecta automaticamente a frequência emitida pelo instrumento musical e compara-a com as notas padrão (E2, A2, D3, G3, B3, E4). O sistema fornece feedback visual através de LEDs RGB e emite sinais sonoros para indicar se a nota está afinada ou precisa ser ajustada.
+O **Afinador Eletrônico** foi projetado para demonstrar a aplicação dos conhecimentos obtidos na capacitação EMBARCATECH a atender ao projeto final da primeira fase do curso. Ele funciona detectando automaticamente a frequência emitida pelo instrumento musical e compara-a com as notas padrão (E2, A2, D3, G3, B3, E4). O sistema fornece feedback visual através do LED RGB e do display oled. Além disso, emite sinais sonoros para indicar o pressionamento dos botões de seleção de nota.
 
 ### Características Principais:
 - **Detecção Automática de Frequências**: Utiliza o algoritmo **YIN** para identificar a frequência fundamental da nota tocada.
@@ -15,13 +15,13 @@ O **Afinador Eletrônico** foi projetado para ser uma ferramenta prática e efic
   - LED **vermelho**: Indica que a nota está abaixo do alvo.
   - LED **verde**: Indica que a nota está afinada.
   - LED **azul**: Indica que a nota está acima do alvo.
-  - **Beep sonoro**: Feedback adicional para confirmação de pressionamento de botões e limites alcançados.
+  - **Beep sonoro**: Feedback adicional para confirmação de pressionamento de botões e das notas limites alcançadas.
   
 ### Componentes Utilizados:
 - **Raspberry Pi Pico** (Microcontrolador RP2040)
 - **Display OLED SSD1306** (I2C)
-- **Microfone analógico**
-- **LEDs RGB** (Vermelho, Verde e Azul)
+- **Microfone eletreto**
+- **LED RGB** (Vermelho, Verde e Azul)
 - **Botões físicos** para navegação entre as notas
 - **Buzzer** para feedback sonoro
 
@@ -79,9 +79,10 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 
 Você pode personalizar o comportamento do afinador modificando os seguintes parâmetros no código:
 
-- **Tolerância de Afinação**: Altere a constante `TOLERANCIA` no código para ajustar a sensibilidade da detecção de afinação.
+- **Tolerância de Afinação**: Altere a constante `TOLERANCIA` no código para ajustar a precisão da detecção de afinação.
 - **Notas Suportadas**: Modifique o array `frequencias[]` para incluir outras notas musicais conforme necessário.
-- **Frequência de Amostragem**: Ajuste a constante `FREQUENCIA_AMOSTRAGEM` para alterar a taxa de amostragem do microfone.
+- **Frequência de Amostragem e Quantidade de Amostras**: Ajuste as constantes `FREQUENCIA_AMOSTRAGEM` e `AMOSTRAS` para alterar a taxa de amostragem do sinal captado pelo microfone.
+- **Threshold**: Llimiar do algoritmo Yin, que influencia a detecção da frequência fundamental e depende do microfone utilizado, do ruído no ambiente e do estado das cordas do instrumento.
 
 ---
 
