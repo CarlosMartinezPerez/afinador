@@ -104,6 +104,12 @@ O código é organizado em várias funções principais:
 
 ---
 
+### 🚀 Possibilidades Futuras de Desenvolvimento  
+
+O **Afinador Eletrônico** apresenta diversas oportunidades para melhorias e expansões futuras. Uma possibilidade interessante seria a integração de conexão via cabo P10, permitindo a afinação de instrumentos elétricos como guitarra ou contrabaixo. Além disso, poderia ser implementado um modo de afinação personalizada, onde o usuário poderia definir suas próprias frequências-alvo para instrumentos não convencionais ou para treino vocal e de ouvido absoluto e relativo. Também seria viável expandir o suporte para outras escalas musicais, como pentatônicas ou microtonais, ampliando o uso do afinador para músicos experimentais. Por fim, a inclusão de filtros digitais para o sinal captado pelo microfone garantiria maior precisão em ambientes com diferentes níveis de ruído, tornando o dispositivo ainda mais robusto e versátil. Todas essas possibilidades, apesar de adicionarem melhorias importantes, estão além do escopo do projeto final do curso.
+
+---
+
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Se você deseja melhorar este projeto ou encontrou algum problema, sinta-se à vontade para abrir uma **Issue** ou enviar um **Pull Request**.
