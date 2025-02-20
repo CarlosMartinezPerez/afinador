@@ -195,7 +195,7 @@ int main() {
     inicializar_botoes(); // Chama a função que inicializa os pinos dos botões A e B.
     Yin yin; // Estrutura para armazenar os parâmetros do algoritmo Yin de detecção de frequência fundamental.
     periodoAmostragem = 1000000 / FREQUENCIA_AMOSTRAGEM; // Calcula o período de amostragem do microfone em microssegundos.
-    Yin_init(&yin, AMOSTRAS, 0.24);  // Inicializa o algoritmo Yin com o número de amostras e o limiar de tolerância.
+    Yin_init(&yin, AMOSTRAS, 0.23);  // Inicializa o algoritmo Yin com o número de amostras e o limiar de tolerância.
 
     // Configuração da área de renderização do display OLED SSD1306.
     struct render_area frame_area = {

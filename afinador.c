@@ -145,7 +145,7 @@ int main() {
     inicializar_botoes();
     Yin yin;
     periodoAmostragem = 1000000 / FREQUENCIA_AMOSTRAGEM;
-    Yin_init(&yin, AMOSTRAS, 0.24);
+    Yin_init(&yin, AMOSTRAS, 0.23);
 
     struct render_area area_exibicao = {
         .start_column = 0,
